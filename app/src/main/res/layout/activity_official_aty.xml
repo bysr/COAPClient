@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edit_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uri_pc" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickDiscover"
+                android:text="查找节点" />
+
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickGet"
+            android:text="get" />
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickPost"
+            android:text="post" />
+
+        <Button
+            android:id="@+id/btn_put"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickPut"
+            android:text="put" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickDel"
+            android:text="delete" />
+
+        <Button
+            android:id="@+id/btn_obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickObs"
+            android:text="Observe"
+            android:textAllCaps="false" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textCodeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textRtt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="9sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.DoubleBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent" />
+
+</FrameLayout>

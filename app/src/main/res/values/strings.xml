@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">COAPClient</string>
+
+    <!--官网测试地址-->
+    <string name="uri_sandbox">coap://californium.eclipse.org:5683</string>
+
+    <!--android服务器测试地址-->
+    <string name="uri_local">coap://localhost:5683</string>
+
+    <!--java服务器测试地址，具体修改-->
+    <string name="uri_pc">coap://192.168.2.100:5683</string>
+</resources>
