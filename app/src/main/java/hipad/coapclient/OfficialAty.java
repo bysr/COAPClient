@@ -55,7 +55,7 @@ public class OfficialAty extends AppCompatActivity {
         btn_discover = (Button) findViewById(R.id.btn_discover);
 
 
-//        editTextUrl.setText("coap://192.168.2.100:5683");
+
 
 
         /**
